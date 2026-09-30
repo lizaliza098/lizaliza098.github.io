@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="70%" cy="20%" r="95%">
+      <stop offset="0" stop-color="#16225a"/><stop offset=".6" stop-color="#070918"/><stop offset="1" stop-color="#05060d"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#8fb0ff"/><stop offset="1" stop-color="#3d6bff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="22" fill="url(#core)" opacity=".35"/>
+  <g filter="url(#glow)" fill="none" stroke-linecap="round">
+    <circle cx="32" cy="32" r="14" stroke="#8fb0ff" stroke-width="4"/>
+    <ellipse cx="32" cy="32" rx="25" ry="8.5" transform="rotate(-28 32 32)" stroke="#a56bff" stroke-width="2.6"/>
+  </g>
+  <circle cx="32" cy="32" r="5" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="53.5" cy="20.5" r="3.2" fill="#ffffff" filter="url(#glow)"/>
+</svg>
